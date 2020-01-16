@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,900|Roboto:300,400,700&display=swap');
+
+body {
+  background: rgb(34,193,195);
+  background: linear-gradient(180deg, #8CB0B8 0%, rgba(253,187,45,1) 100%);
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.opacity-1 {
+  opacity: 1!important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title-card {
+  background-size: cover;
+  background-position: 45% 35%;
+  height: 70vh;
+  padding-top: 100px;
+  padding-left: 40px;
+  filter:sepia(50%);
+  box-shadow: 0 8px 8px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.fa-angle-double-down {
+  position: absolute;
+  bottom: -92px;
+  left: 50vw;
+  font-size: 64px;
+  color: white;
+  transition: 0.3s;
+}
+
+.story-container {
+  margin: 40px auto;
+  width: 80vw;
+}
+
+.story-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 80vh;
+  padding: 24px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.story-card > :first-child{
+  margin-right: 36px;
+}
+
+.title-card p{ 
+  font-size: 24px;
+  color: white;
+  text-shadow: 0 0 1px rgba(0,0,0,0.8);
+}
+
+.story-card img {
+  height: 400px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.story-card p {
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  text-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.story-card-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  grid-template-areas: 
+    "first second"
+    "third third";
+}
+
+.story-card-img-grid img {
+  height: 200px;
+}
+
+.story-card-img-grid img:nth-child(1) {
+  grid-area: first;
+}
+.story-card-img-grid img:nth-child(2) {
+  grid-area: second;
+}
+.story-card-img-grid img:nth-child(3) {
+  grid-area: third;
+  width: 416px;
+}
+
+.bday h2{
+  font-size: 64px;
+}
