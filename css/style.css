@@ -48,7 +48,7 @@ h2 {
   height: 70vh;
   padding-top: 100px;
   padding-left: 40px;
-  filter:sepia(50%);
+  filter:sepia(25%);
   box-shadow: 0 8px 8px rgba(0,0,0,0.4);
   position: relative;
 }
